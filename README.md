@@ -21,7 +21,7 @@ The main methods used during implementation of this project are-
 In this section, we converted the joint angles (theta1, theta2, and theta3) to the end effector coordinate. For that, we took the following actions:
 
 - Found the Denavit–Hartenberg parameters of 3 Dof manipulators.
-- Using sympy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame three to frame zero.
+- Using sympy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
 - Obtained the equations of x and y in terms of joint angles and other parameters which will be further used for inverse kinematics.
 <p align="center">
 <image align="centre" src="https://user-images.githubusercontent.com/108993449/197388420-f2e78226-776f-4065-b925-2b68d35d149c.png" width ="500" height="300" >
@@ -29,7 +29,7 @@ In this section, we converted the joint angles (theta1, theta2, and theta3) to t
   
 ## Inverse Kinematics
 
-We determined the joint angles necessary to move the end effector to a specific coordinate using inverse kinematics. To do that, we approximated using the Newton-Ralphson method.
+We determined the joint angles necessary to move the end effector to a specific coordinate using inverse kinematics. To do that, we approximated the angles Newon-Ralphson method.
 
 - Used the two equations obtained from Forward kinmatics and third equation regarding the orientation of the end effector.
 - Initial guesses were made for theta1, theta2, and theta3.
@@ -53,7 +53,7 @@ Now, a trajectory must be created in order to trace shapes.
 - Taking a simple line trajectory into consideration, we divided the line into a significant number of points, say 100.
 - By doing this we obtained a straight line between 2 consecutive point instead of a arc.
 
-The trajectory for various shapes, such as square, rectangle, and elipse, can be calculated using the same methodology as the line.
+The trajectory for various shapes such as square, rectangle, and elipse, can be calculated using the same methodology as the line.
 
 ## Results-
   Following results were obtained -
