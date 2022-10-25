@@ -48,7 +48,7 @@ We determined the joint angles necessary to move the end effector to a specific 
 
 ## Trajectory Generation
 
-Now, a trajectory must be created in order to trace shapes.
+Now,a trajectory must be created in order to trace shapes.
 
 - Taking a simple line trajectory into consideration, we divided the line into a significant number of points, say 100.
 - By doing this we obtained a straight line between 2 consecutive point instead of a arc.
