@@ -3,7 +3,7 @@
 ## Description
 
 
-In this project, we have created a manipulators with 3 Degree of Freedom which moves in X-Y plane within its workspace and draw shapes accordingly.
+In this project, we have created a manipulator with 3 Degree of Freedom which moves in X-Y plane within its workspace and draw shapes accordingly.
 
 <p align="center">
 <image src="https://user-images.githubusercontent.com/108993449/197596223-350a1840-f1d7-459b-b260-47adfec11647.png" width="350" height="250">
@@ -20,7 +20,7 @@ For our 3 Dof manipulator arm ,we studied and implemented the following-
 Forward kinematics is frequently used to know the position of end effector when we know the joint angles (theta1, theta2, and theta3).To calculate forward kinematics we can use trignometry or Denavit-Hartenberg parameters.
 For this project we have used D-H paramters and following steps were taken-
 
-- Found the Denavit–Hartenberg parameters of 3 Dof manipulators.
+- Found the D–H parameters of 3 Dof manipulators.
 - Using SymPy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
 - Obtained the equations of x and y in terms of joint angles and other parameters which will be further used for inverse kinematics.
 <p align="center">
@@ -35,6 +35,8 @@ To do that, we approximated the angles using Newon-Ralphson method.
 - Used the two equations obtained from Forward kinmatics and third equation regarding the orientation of the end effector.
 - Initial guesses were made for theta1, theta2, and theta3.
 - Using a first-guess calculation and the Newton-Raphson equation, the function value matrix and Jacobian matrix were obtained and hence obtaining joint angle values for a   specific coordinate.
+  
+ Following are the results we obtained-
   
    <p float="left">
   <image src="https://user-images.githubusercontent.com/108993449/197811121-ad1f64e9-3854-4908-a465-049475868b55.png" width="350" height="300" />
@@ -51,9 +53,13 @@ Generating a trajectory is a crucial step in drawing shapes.
 
 
 A desired trajectory is defined by some parameters, usually:
+
 • Initial and final point (point-to-point control). 
+
 • Finite sequence of points along the path (motion through sequence of points) 
-Inverse kinematics is calculated for the sequence of points
+
+
+Inverse kinematics is calculated for these sequence of points to get trajectory of line.
 The trajectory for various shapes such as square, rectangle, and elipse, can be calculated using the same methodology as the line.
 
 ## Results-
