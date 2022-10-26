@@ -3,25 +3,25 @@
 ## Description
 
 
-
-In this project, we created a serial manipulator with 3 degrees of freedom that can draw shapes. The Arduino Mega is used to control the robotic arm, and Python is used to implement it.
+In this project, we have created a manipulators with 3 Degree of Freedom which moves in X-Y plane within its workspace and draw shapes accordingly.
 
 <p align="center">
 <image src="https://user-images.githubusercontent.com/108993449/197596223-350a1840-f1d7-459b-b260-47adfec11647.png" width="350" height="250">
   </p>
 
-The main methods used during implementation of this project are-
+For our 3 Dof manipulator arm ,we studied and implemented the following-
 
-- Forward Kinematics
+- Forward Kinematics 
 - Inverse Kinematics
-- Trajectory generation
+- Trajectory Generation
 
 
 ##  Forward kinematics
-In this section, we converted the joint angles (theta1, theta2, and theta3) to the end effector coordinate. For that, we took the following actions:
+Forward kinematics is frequently used to know the position of end effector when we know the joint angles (theta1, theta2, and theta3).To calculate forward kinematics we can use trignometry or Denavit-Hartenberg parameters.
+For this project we have used D-H paramters and following steps were taken-
 
 - Found the Denavit–Hartenberg parameters of 3 Dof manipulators.
-- Using sympy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
+- Using SymPy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
 - Obtained the equations of x and y in terms of joint angles and other parameters which will be further used for inverse kinematics.
 <p align="center">
 <image align="centre" src="https://user-images.githubusercontent.com/108993449/197388420-f2e78226-776f-4065-b925-2b68d35d149c.png" width ="500" height="300" >
@@ -29,7 +29,8 @@ In this section, we converted the joint angles (theta1, theta2, and theta3) to t
   
 ## Inverse Kinematics
 
-We determined the joint angles necessary to move the end effector to a specific coordinate using inverse kinematics. To do that, we approximated the angles Newon-Ralphson method.
+Inverse kinematics is about calculating the angles of joints (i.e. angles of the servo motors on a arm) that will cause the end effector of a manipulator arm to reach some given desired position (x, y, z) in 3D space.
+To do that, we approximated the angles using Newon-Ralphson method.
 
 - Used the two equations obtained from Forward kinmatics and third equation regarding the orientation of the end effector.
 - Initial guesses were made for theta1, theta2, and theta3.
@@ -44,19 +45,19 @@ We determined the joint angles necessary to move the end effector to a specific 
 
 
 
-
-
 ## Trajectory Generation
+Trajectory planning is moving from point A to point B while avoiding collisions over time. This can be computed in both discrete and continuous methods.
+Generating a trajectory is a crucial step in drawing shapes.
 
-Now,a trajectory must be created in order to trace shapes.
 
-- Taking a simple line trajectory into consideration, we divided the line into a significant number of points, say 100.
-- By doing this we obtained a straight line between 2 consecutive point instead of a arc.
-
+A desired trajectory is defined by some parameters, usually:
+• Initial and final point (point-to-point control). 
+• Finite sequence of points along the path (motion through sequence of points) 
+Inverse kinematics is calculated for the sequence of points
 The trajectory for various shapes such as square, rectangle, and elipse, can be calculated using the same methodology as the line.
 
 ## Results-
-  Following results were obtained -
+  Following Results were obtained -
   
   - Tracing a Line 
   <p float="left">
