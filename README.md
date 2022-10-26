@@ -16,7 +16,7 @@ For our 3 DoF manipulator arm ,we studied and implemented the following-
 - Trajectory Generation
 
 
-##  Forward kinematics
+##  Forward Kinematics
 Forward kinematics is frequently used to know the position of end effector when we know the joint angles (theta1, theta2, and theta3).To calculate forward kinematics we can use trignometry or Denavit-Hartenberg parameters.
 For this project we have used D-H paramters and following steps were taken-
 
