@@ -60,7 +60,7 @@ A desired trajectory is defined by some parameters, usually:
 
 
 Inverse kinematics is calculated for these sequence of points to get trajectory of line.
-The trajectory for various shapes such as square, rectangle, and elipse, can be calculated using the same methodology as the line.
+The trajectory for various shapes such as square, rectangle, and ellipse, can be calculated using the same methodology as the line.
 
 ## Results-
   Following Results were obtained -
