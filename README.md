@@ -20,7 +20,7 @@ For our 3 DoF manipulator arm ,we studied and implemented the following-
 Forward kinematics is frequently used to know the position of end effector when we know the joint angles (theta1, theta2, and theta3).To calculate forward kinematics we can use trignometry or Denavit-Hartenberg parameters.
 For this project we have used D-H paramters and following steps were taken-
 
-- Found the D–H parameters of 3 Dof manipulators.
+- Found the D–H parameters of 3 Dof manipulator arm.
 - Using SymPy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
 - Obtained the equations of x and y in terms of joint angles and other parameters which will be further used for inverse kinematics.
 <p align="center">
