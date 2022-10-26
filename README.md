@@ -34,9 +34,9 @@ To do that, we approximated the angles using Newon-Raphson method.
 
 - Used the two equations obtained from Forward kinematics and third equation regarding the orientation of the end effector.
 - Initial guesses were made for theta1, theta2, and theta3.
-- Using a first-guess calculation and the Newton-Raphson equation, the function value matrix and Jacobian matrix were obtained and hence obtaining joint angle values for a specific coordinate.
+- Using appropriate first guess and the Newton-Raphson equation, the function value matrix and Jacobian matrix were obtained and hence obtaining joint angle values for a specific coordinate.
   
- Following are the results we obtained-
+ Following are the results we obtained
   
    <p float="left">
   <image src="https://user-images.githubusercontent.com/108993449/197811121-ad1f64e9-3854-4908-a465-049475868b55.png" width="350" height="300" />
@@ -52,18 +52,18 @@ Trajectory planning is moving from point A to point B while avoiding collisions 
 Generating a trajectory is a crucial step in drawing shapes.
 
 
-A desired trajectory is defined by some parameters, usually:
+A desired trajectory is defined by some parameters, usually
 
 • Initial and final point (point-to-point control). 
 
 • Finite sequence of points along the path (motion through sequence of points) 
 
 
-Inverse kinematics is calculated for these sequence of points to get trajectory of line.
-The trajectory for various shapes such as square, rectangle, and ellipse, can be calculated using the same methodology as the line.
+Inverse kinematics is calculated for these sequence of points to get trajectory of a line.
+The trajectory for various shapes such as square, rectangle, and ellipse can be calculated using the same methodology as the line.
 
-## Results-
-  Following Results were obtained -
+## Results
+  Following Results were obtained 
   
   - Tracing a Line 
   <p float="left">
