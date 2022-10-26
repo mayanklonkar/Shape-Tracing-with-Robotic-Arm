@@ -3,7 +3,7 @@
 ## Description
 
 
-In this project, we have created a manipulator with 3 Degree of Freedom which moves in X-Y plane within its workspace and draw shapes accordingly.
+In this project, we have created a manipulator of 3 Degree of Freedom which moves in X-Y plane within its workspace and draw shapes accordingly.
 
 <p align="center">
 <image src="https://user-images.githubusercontent.com/108993449/197596223-350a1840-f1d7-459b-b260-47adfec11647.png" width="350" height="250">
