@@ -20,8 +20,8 @@ For our 3 DoF manipulator arm ,we studied and implemented the following-
 Forward kinematics is frequently used to know the position of end effector when we know the joint angles (theta1, theta2, and theta3).To calculate forward kinematics we can use trignometry or Denavit-Hartenberg parameters.
 For this project we have used D-H paramters and following steps were taken-
 
-- Found the D–H parameters of 3 Dof manipulator arm.
-- Using SymPy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transform from frame 3 to frame 0.
+- Found the D–H parameters of 3 DoF manipulator arm.
+- Using SymPy (Symbolic python) created generalised homogeneous matrix and then substituited DH parameters to obtain the transformation from frame 3 to frame 0.
 - Obtained the equations of x and y in terms of joint angles and other parameters which will be further used for inverse kinematics.
 <p align="center">
 <image align="centre" src="https://user-images.githubusercontent.com/108993449/197388420-f2e78226-776f-4065-b925-2b68d35d149c.png" width ="500" height="300" >
@@ -29,7 +29,7 @@ For this project we have used D-H paramters and following steps were taken-
   
 ## Inverse Kinematics
 
-Inverse kinematics is about calculating the angles of joints (i.e. angles of the servo motors on a arm) that will cause the end effector of a manipulator arm to reach some given desired position (x, y, z) in 3D space.
+Inverse kinematics is about calculating the angles of joints (i.e. angles of the servo motors on the arm) that will cause the end effector of a manipulator arm to reach some given desired position (x, y, z) in 3D space.
 To do that, we approximated the angles using Newon-Raphson method.
 
 - Used the two equations obtained from Forward kinematics and third equation regarding the orientation of the end effector.
