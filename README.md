@@ -9,7 +9,7 @@ In this project, we have created a manipulator with 3 Degree of Freedom which mo
 <image src="https://user-images.githubusercontent.com/108993449/197596223-350a1840-f1d7-459b-b260-47adfec11647.png" width="350" height="250">
   </p>
 
-For our 3 Dof manipulator arm ,we studied and implemented the following-
+For our 3 DoF manipulator arm ,we studied and implemented the following-
 
 - Forward Kinematics 
 - Inverse Kinematics
